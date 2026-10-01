@@ -1,0 +1,2082 @@
+{
+  "rows": 303,
+  "columns": [
+    "age",
+    "sex",
+    "cp",
+    "trestbps",
+    "chol",
+    "fbs",
+    "restecg",
+    "thalach",
+    "exang",
+    "oldpeak",
+    "slope",
+    "ca",
+    "thal",
+    "target"
+  ],
+  "missing": {
+    "age": 0,
+    "sex": 0,
+    "cp": 0,
+    "trestbps": 0,
+    "chol": 0,
+    "fbs": 0,
+    "restecg": 0,
+    "thalach": 0,
+    "exang": 0,
+    "oldpeak": 0,
+    "slope": 0,
+    "ca": 0,
+    "thal": 0,
+    "target": 0
+  },
+  "classBalance": {
+    "negative": 164,
+    "positive": 139
+  },
+  "summary": {
+    "age": {
+      "mean": 54.439,
+      "std": 9.039,
+      "min": 29.0,
+      "max": 77.0,
+      "median": 56.0
+    },
+    "trestbps": {
+      "mean": 131.69,
+      "std": 17.6,
+      "min": 94.0,
+      "max": 200.0,
+      "median": 130.0
+    },
+    "chol": {
+      "mean": 246.693,
+      "std": 51.777,
+      "min": 126.0,
+      "max": 564.0,
+      "median": 241.0
+    },
+    "thalach": {
+      "mean": 149.607,
+      "std": 22.875,
+      "min": 71.0,
+      "max": 202.0,
+      "median": 153.0
+    },
+    "oldpeak": {
+      "mean": 1.04,
+      "std": 1.161,
+      "min": 0.0,
+      "max": 6.2,
+      "median": 0.8
+    }
+  },
+  "byAgeBand": [
+    {
+      "key": "29-39",
+      "total": 15,
+      "positive": 4,
+      "rate": 0.2667
+    },
+    {
+      "key": "40-49",
+      "total": 72,
+      "positive": 22,
+      "rate": 0.3056
+    },
+    {
+      "key": "50-59",
+      "total": 125,
+      "positive": 60,
+      "rate": 0.48
+    },
+    {
+      "key": "60-69",
+      "total": 81,
+      "positive": 49,
+      "rate": 0.6049
+    },
+    {
+      "key": "70+",
+      "total": 10,
+      "positive": 4,
+      "rate": 0.4
+    }
+  ],
+  "bySex": [
+    {
+      "key": "Female",
+      "total": 97,
+      "positive": 25,
+      "rate": 0.2577
+    },
+    {
+      "key": "Male",
+      "total": 206,
+      "positive": 114,
+      "rate": 0.5534
+    }
+  ],
+  "byChestPain": [
+    {
+      "key": "Asymptomatic",
+      "total": 144,
+      "positive": 105,
+      "rate": 0.7292
+    },
+    {
+      "key": "Atypical",
+      "total": 50,
+      "positive": 9,
+      "rate": 0.18
+    },
+    {
+      "key": "Non-anginal",
+      "total": 86,
+      "positive": 18,
+      "rate": 0.2093
+    },
+    {
+      "key": "Typical angina",
+      "total": 23,
+      "positive": 7,
+      "rate": 0.3043
+    }
+  ],
+  "byVessels": [
+    {
+      "key": "0 vessels",
+      "total": 180,
+      "positive": 47,
+      "rate": 0.2611
+    },
+    {
+      "key": "1 vessels",
+      "total": 65,
+      "positive": 44,
+      "rate": 0.6769
+    },
+    {
+      "key": "2 vessels",
+      "total": 38,
+      "positive": 31,
+      "rate": 0.8158
+    },
+    {
+      "key": "3 vessels",
+      "total": 20,
+      "positive": 17,
+      "rate": 0.85
+    }
+  ],
+  "byThal": [
+    {
+      "key": "Fixed defect",
+      "total": 18,
+      "positive": 12,
+      "rate": 0.6667
+    },
+    {
+      "key": "Normal",
+      "total": 168,
+      "positive": 38,
+      "rate": 0.2262
+    },
+    {
+      "key": "Reversible defect",
+      "total": 117,
+      "positive": 89,
+      "rate": 0.7607
+    }
+  ],
+  "byExang": [
+    {
+      "key": "No",
+      "total": 204,
+      "positive": 63,
+      "rate": 0.3088
+    },
+    {
+      "key": "Yes",
+      "total": 99,
+      "positive": 76,
+      "rate": 0.7677
+    }
+  ],
+  "targetCorrelation": [
+    {
+      "feature": "thal",
+      "correlation": 0.5159
+    },
+    {
+      "feature": "ca",
+      "correlation": 0.46
+    },
+    {
+      "feature": "exang",
+      "correlation": 0.4319
+    },
+    {
+      "feature": "oldpeak",
+      "correlation": 0.4245
+    },
+    {
+      "feature": "thalach",
+      "correlation": -0.4172
+    },
+    {
+      "feature": "cp",
+      "correlation": 0.4144
+    },
+    {
+      "feature": "slope",
+      "correlation": 0.3392
+    },
+    {
+      "feature": "sex",
+      "correlation": 0.2768
+    },
+    {
+      "feature": "age",
+      "correlation": 0.2231
+    },
+    {
+      "feature": "restecg",
+      "correlation": 0.1692
+    },
+    {
+      "feature": "trestbps",
+      "correlation": 0.1508
+    },
+    {
+      "feature": "chol",
+      "correlation": 0.0852
+    },
+    {
+      "feature": "fbs",
+      "correlation": 0.0253
+    }
+  ],
+  "scatterAgeThalach": [
+    {
+      "age": 63,
+      "thalach": 150,
+      "chol": 233,
+      "target": 0
+    },
+    {
+      "age": 67,
+      "thalach": 108,
+      "chol": 286,
+      "target": 1
+    },
+    {
+      "age": 67,
+      "thalach": 129,
+      "chol": 229,
+      "target": 1
+    },
+    {
+      "age": 37,
+      "thalach": 187,
+      "chol": 250,
+      "target": 0
+    },
+    {
+      "age": 41,
+      "thalach": 172,
+      "chol": 204,
+      "target": 0
+    },
+    {
+      "age": 56,
+      "thalach": 178,
+      "chol": 236,
+      "target": 0
+    },
+    {
+      "age": 62,
+      "thalach": 160,
+      "chol": 268,
+      "target": 1
+    },
+    {
+      "age": 57,
+      "thalach": 163,
+      "chol": 354,
+      "target": 0
+    },
+    {
+      "age": 63,
+      "thalach": 147,
+      "chol": 254,
+      "target": 1
+    },
+    {
+      "age": 53,
+      "thalach": 155,
+      "chol": 203,
+      "target": 1
+    },
+    {
+      "age": 57,
+      "thalach": 148,
+      "chol": 192,
+      "target": 0
+    },
+    {
+      "age": 56,
+      "thalach": 153,
+      "chol": 294,
+      "target": 0
+    },
+    {
+      "age": 56,
+      "thalach": 142,
+      "chol": 256,
+      "target": 1
+    },
+    {
+      "age": 44,
+      "thalach": 173,
+      "chol": 263,
+      "target": 0
+    },
+    {
+      "age": 52,
+      "thalach": 162,
+      "chol": 199,
+      "target": 0
+    },
+    {
+      "age": 57,
+      "thalach": 174,
+      "chol": 168,
+      "target": 0
+    },
+    {
+      "age": 48,
+      "thalach": 168,
+      "chol": 229,
+      "target": 1
+    },
+    {
+      "age": 54,
+      "thalach": 160,
+      "chol": 239,
+      "target": 0
+    },
+    {
+      "age": 48,
+      "thalach": 139,
+      "chol": 275,
+      "target": 0
+    },
+    {
+      "age": 49,
+      "thalach": 171,
+      "chol": 266,
+      "target": 0
+    },
+    {
+      "age": 64,
+      "thalach": 144,
+      "chol": 211,
+      "target": 0
+    },
+    {
+      "age": 58,
+      "thalach": 162,
+      "chol": 283,
+      "target": 0
+    },
+    {
+      "age": 58,
+      "thalach": 160,
+      "chol": 284,
+      "target": 1
+    },
+    {
+      "age": 58,
+      "thalach": 173,
+      "chol": 224,
+      "target": 1
+    },
+    {
+      "age": 60,
+      "thalach": 132,
+      "chol": 206,
+      "target": 1
+    },
+    {
+      "age": 50,
+      "thalach": 158,
+      "chol": 219,
+      "target": 0
+    },
+    {
+      "age": 58,
+      "thalach": 172,
+      "chol": 340,
+      "target": 0
+    },
+    {
+      "age": 66,
+      "thalach": 114,
+      "chol": 226,
+      "target": 0
+    },
+    {
+      "age": 43,
+      "thalach": 171,
+      "chol": 247,
+      "target": 0
+    },
+    {
+      "age": 40,
+      "thalach": 114,
+      "chol": 167,
+      "target": 1
+    },
+    {
+      "age": 69,
+      "thalach": 151,
+      "chol": 239,
+      "target": 0
+    },
+    {
+      "age": 60,
+      "thalach": 160,
+      "chol": 230,
+      "target": 1
+    },
+    {
+      "age": 64,
+      "thalach": 158,
+      "chol": 335,
+      "target": 1
+    },
+    {
+      "age": 59,
+      "thalach": 161,
+      "chol": 234,
+      "target": 0
+    },
+    {
+      "age": 44,
+      "thalach": 179,
+      "chol": 233,
+      "target": 0
+    },
+    {
+      "age": 42,
+      "thalach": 178,
+      "chol": 226,
+      "target": 0
+    },
+    {
+      "age": 43,
+      "thalach": 120,
+      "chol": 177,
+      "target": 1
+    },
+    {
+      "age": 57,
+      "thalach": 112,
+      "chol": 276,
+      "target": 1
+    },
+    {
+      "age": 55,
+      "thalach": 132,
+      "chol": 353,
+      "target": 1
+    },
+    {
+      "age": 61,
+      "thalach": 137,
+      "chol": 243,
+      "target": 0
+    },
+    {
+      "age": 65,
+      "thalach": 114,
+      "chol": 225,
+      "target": 1
+    },
+    {
+      "age": 40,
+      "thalach": 178,
+      "chol": 199,
+      "target": 0
+    },
+    {
+      "age": 71,
+      "thalach": 162,
+      "chol": 302,
+      "target": 0
+    },
+    {
+      "age": 59,
+      "thalach": 157,
+      "chol": 212,
+      "target": 0
+    },
+    {
+      "age": 61,
+      "thalach": 169,
+      "chol": 330,
+      "target": 1
+    },
+    {
+      "age": 58,
+      "thalach": 165,
+      "chol": 230,
+      "target": 1
+    },
+    {
+      "age": 51,
+      "thalach": 123,
+      "chol": 175,
+      "target": 0
+    },
+    {
+      "age": 50,
+      "thalach": 128,
+      "chol": 243,
+      "target": 1
+    },
+    {
+      "age": 65,
+      "thalach": 157,
+      "chol": 417,
+      "target": 0
+    },
+    {
+      "age": 53,
+      "thalach": 152,
+      "chol": 197,
+      "target": 0
+    },
+    {
+      "age": 41,
+      "thalach": 168,
+      "chol": 198,
+      "target": 0
+    },
+    {
+      "age": 65,
+      "thalach": 140,
+      "chol": 177,
+      "target": 0
+    },
+    {
+      "age": 44,
+      "thalach": 153,
+      "chol": 290,
+      "target": 1
+    },
+    {
+      "age": 44,
+      "thalach": 188,
+      "chol": 219,
+      "target": 0
+    },
+    {
+      "age": 60,
+      "thalach": 144,
+      "chol": 253,
+      "target": 1
+    },
+    {
+      "age": 54,
+      "thalach": 109,
+      "chol": 266,
+      "target": 1
+    },
+    {
+      "age": 50,
+      "thalach": 163,
+      "chol": 233,
+      "target": 1
+    },
+    {
+      "age": 41,
+      "thalach": 158,
+      "chol": 172,
+      "target": 1
+    },
+    {
+      "age": 54,
+      "thalach": 152,
+      "chol": 273,
+      "target": 0
+    },
+    {
+      "age": 51,
+      "thalach": 125,
+      "chol": 213,
+      "target": 0
+    },
+    {
+      "age": 51,
+      "thalach": 142,
+      "chol": 305,
+      "target": 1
+    },
+    {
+      "age": 46,
+      "thalach": 160,
+      "chol": 177,
+      "target": 0
+    },
+    {
+      "age": 58,
+      "thalach": 131,
+      "chol": 216,
+      "target": 1
+    },
+    {
+      "age": 54,
+      "thalach": 170,
+      "chol": 304,
+      "target": 0
+    },
+    {
+      "age": 54,
+      "thalach": 113,
+      "chol": 188,
+      "target": 1
+    },
+    {
+      "age": 60,
+      "thalach": 142,
+      "chol": 282,
+      "target": 1
+    },
+    {
+      "age": 60,
+      "thalach": 155,
+      "chol": 185,
+      "target": 1
+    },
+    {
+      "age": 54,
+      "thalach": 165,
+      "chol": 232,
+      "target": 0
+    },
+    {
+      "age": 59,
+      "thalach": 140,
+      "chol": 326,
+      "target": 1
+    },
+    {
+      "age": 46,
+      "thalach": 147,
+      "chol": 231,
+      "target": 1
+    },
+    {
+      "age": 65,
+      "thalach": 148,
+      "chol": 269,
+      "target": 0
+    },
+    {
+      "age": 67,
+      "thalach": 163,
+      "chol": 254,
+      "target": 1
+    },
+    {
+      "age": 62,
+      "thalach": 99,
+      "chol": 267,
+      "target": 1
+    },
+    {
+      "age": 65,
+      "thalach": 158,
+      "chol": 248,
+      "target": 1
+    },
+    {
+      "age": 44,
+      "thalach": 177,
+      "chol": 197,
+      "target": 1
+    },
+    {
+      "age": 65,
+      "thalach": 151,
+      "chol": 360,
+      "target": 0
+    },
+    {
+      "age": 60,
+      "thalach": 141,
+      "chol": 258,
+      "target": 1
+    },
+    {
+      "age": 51,
+      "thalach": 142,
+      "chol": 308,
+      "target": 0
+    },
+    {
+      "age": 48,
+      "thalach": 180,
+      "chol": 245,
+      "target": 0
+    },
+    {
+      "age": 58,
+      "thalach": 111,
+      "chol": 270,
+      "target": 1
+    },
+    {
+      "age": 45,
+      "thalach": 148,
+      "chol": 208,
+      "target": 0
+    },
+    {
+      "age": 53,
+      "thalach": 143,
+      "chol": 264,
+      "target": 0
+    },
+    {
+      "age": 39,
+      "thalach": 182,
+      "chol": 321,
+      "target": 0
+    },
+    {
+      "age": 68,
+      "thalach": 150,
+      "chol": 274,
+      "target": 1
+    },
+    {
+      "age": 52,
+      "thalach": 172,
+      "chol": 325,
+      "target": 0
+    },
+    {
+      "age": 44,
+      "thalach": 180,
+      "chol": 235,
+      "target": 0
+    },
+    {
+      "age": 47,
+      "thalach": 156,
+      "chol": 257,
+      "target": 0
+    },
+    {
+      "age": 53,
+      "thalach": 115,
+      "chol": 216,
+      "target": 0
+    },
+    {
+      "age": 53,
+      "thalach": 160,
+      "chol": 234,
+      "target": 0
+    },
+    {
+      "age": 51,
+      "thalach": 149,
+      "chol": 256,
+      "target": 0
+    },
+    {
+      "age": 66,
+      "thalach": 151,
+      "chol": 302,
+      "target": 0
+    },
+    {
+      "age": 62,
+      "thalach": 145,
+      "chol": 164,
+      "target": 1
+    },
+    {
+      "age": 62,
+      "thalach": 146,
+      "chol": 231,
+      "target": 0
+    },
+    {
+      "age": 44,
+      "thalach": 175,
+      "chol": 141,
+      "target": 0
+    },
+    {
+      "age": 63,
+      "thalach": 172,
+      "chol": 252,
+      "target": 0
+    },
+    {
+      "age": 52,
+      "thalach": 161,
+      "chol": 255,
+      "target": 1
+    },
+    {
+      "age": 59,
+      "thalach": 142,
+      "chol": 239,
+      "target": 1
+    },
+    {
+      "age": 60,
+      "thalach": 157,
+      "chol": 258,
+      "target": 1
+    },
+    {
+      "age": 52,
+      "thalach": 158,
+      "chol": 201,
+      "target": 0
+    },
+    {
+      "age": 48,
+      "thalach": 186,
+      "chol": 222,
+      "target": 0
+    },
+    {
+      "age": 45,
+      "thalach": 185,
+      "chol": 260,
+      "target": 0
+    },
+    {
+      "age": 34,
+      "thalach": 174,
+      "chol": 182,
+      "target": 0
+    },
+    {
+      "age": 57,
+      "thalach": 159,
+      "chol": 303,
+      "target": 0
+    },
+    {
+      "age": 71,
+      "thalach": 130,
+      "chol": 265,
+      "target": 0
+    },
+    {
+      "age": 49,
+      "thalach": 139,
+      "chol": 188,
+      "target": 1
+    },
+    {
+      "age": 54,
+      "thalach": 156,
+      "chol": 309,
+      "target": 0
+    },
+    {
+      "age": 59,
+      "thalach": 162,
+      "chol": 177,
+      "target": 1
+    },
+    {
+      "age": 57,
+      "thalach": 150,
+      "chol": 229,
+      "target": 1
+    },
+    {
+      "age": 61,
+      "thalach": 140,
+      "chol": 260,
+      "target": 1
+    },
+    {
+      "age": 39,
+      "thalach": 140,
+      "chol": 219,
+      "target": 1
+    },
+    {
+      "age": 61,
+      "thalach": 146,
+      "chol": 307,
+      "target": 1
+    },
+    {
+      "age": 56,
+      "thalach": 144,
+      "chol": 249,
+      "target": 1
+    },
+    {
+      "age": 52,
+      "thalach": 190,
+      "chol": 186,
+      "target": 0
+    },
+    {
+      "age": 43,
+      "thalach": 136,
+      "chol": 341,
+      "target": 1
+    },
+    {
+      "age": 62,
+      "thalach": 97,
+      "chol": 263,
+      "target": 1
+    },
+    {
+      "age": 41,
+      "thalach": 132,
+      "chol": 203,
+      "target": 0
+    },
+    {
+      "age": 58,
+      "thalach": 165,
+      "chol": 211,
+      "target": 0
+    },
+    {
+      "age": 35,
+      "thalach": 182,
+      "chol": 183,
+      "target": 0
+    },
+    {
+      "age": 63,
+      "thalach": 132,
+      "chol": 330,
+      "target": 1
+    },
+    {
+      "age": 65,
+      "thalach": 127,
+      "chol": 254,
+      "target": 1
+    },
+    {
+      "age": 48,
+      "thalach": 150,
+      "chol": 256,
+      "target": 1
+    },
+    {
+      "age": 63,
+      "thalach": 154,
+      "chol": 407,
+      "target": 1
+    },
+    {
+      "age": 51,
+      "thalach": 143,
+      "chol": 222,
+      "target": 0
+    },
+    {
+      "age": 55,
+      "thalach": 111,
+      "chol": 217,
+      "target": 1
+    },
+    {
+      "age": 65,
+      "thalach": 174,
+      "chol": 282,
+      "target": 1
+    },
+    {
+      "age": 45,
+      "thalach": 175,
+      "chol": 234,
+      "target": 0
+    },
+    {
+      "age": 56,
+      "thalach": 133,
+      "chol": 288,
+      "target": 1
+    },
+    {
+      "age": 54,
+      "thalach": 126,
+      "chol": 239,
+      "target": 1
+    },
+    {
+      "age": 44,
+      "thalach": 170,
+      "chol": 220,
+      "target": 0
+    },
+    {
+      "age": 62,
+      "thalach": 163,
+      "chol": 209,
+      "target": 0
+    },
+    {
+      "age": 54,
+      "thalach": 147,
+      "chol": 258,
+      "target": 0
+    },
+    {
+      "age": 51,
+      "thalach": 154,
+      "chol": 227,
+      "target": 0
+    },
+    {
+      "age": 29,
+      "thalach": 202,
+      "chol": 204,
+      "target": 0
+    },
+    {
+      "age": 51,
+      "thalach": 186,
+      "chol": 261,
+      "target": 0
+    },
+    {
+      "age": 43,
+      "thalach": 165,
+      "chol": 213,
+      "target": 0
+    },
+    {
+      "age": 55,
+      "thalach": 161,
+      "chol": 250,
+      "target": 0
+    },
+    {
+      "age": 70,
+      "thalach": 125,
+      "chol": 174,
+      "target": 1
+    },
+    {
+      "age": 62,
+      "thalach": 103,
+      "chol": 281,
+      "target": 1
+    },
+    {
+      "age": 35,
+      "thalach": 130,
+      "chol": 198,
+      "target": 1
+    },
+    {
+      "age": 51,
+      "thalach": 166,
+      "chol": 245,
+      "target": 0
+    },
+    {
+      "age": 59,
+      "thalach": 164,
+      "chol": 221,
+      "target": 0
+    },
+    {
+      "age": 59,
+      "thalach": 159,
+      "chol": 288,
+      "target": 1
+    },
+    {
+      "age": 52,
+      "thalach": 184,
+      "chol": 205,
+      "target": 0
+    },
+    {
+      "age": 64,
+      "thalach": 131,
+      "chol": 309,
+      "target": 1
+    },
+    {
+      "age": 58,
+      "thalach": 154,
+      "chol": 240,
+      "target": 0
+    },
+    {
+      "age": 47,
+      "thalach": 152,
+      "chol": 243,
+      "target": 1
+    },
+    {
+      "age": 57,
+      "thalach": 124,
+      "chol": 289,
+      "target": 1
+    },
+    {
+      "age": 41,
+      "thalach": 179,
+      "chol": 250,
+      "target": 0
+    },
+    {
+      "age": 45,
+      "thalach": 170,
+      "chol": 308,
+      "target": 0
+    },
+    {
+      "age": 60,
+      "thalach": 160,
+      "chol": 318,
+      "target": 0
+    },
+    {
+      "age": 52,
+      "thalach": 178,
+      "chol": 298,
+      "target": 0
+    },
+    {
+      "age": 42,
+      "thalach": 122,
+      "chol": 265,
+      "target": 0
+    },
+    {
+      "age": 67,
+      "thalach": 160,
+      "chol": 564,
+      "target": 0
+    },
+    {
+      "age": 55,
+      "thalach": 145,
+      "chol": 289,
+      "target": 1
+    },
+    {
+      "age": 64,
+      "thalach": 96,
+      "chol": 246,
+      "target": 1
+    },
+    {
+      "age": 70,
+      "thalach": 109,
+      "chol": 322,
+      "target": 1
+    },
+    {
+      "age": 51,
+      "thalach": 173,
+      "chol": 299,
+      "target": 1
+    },
+    {
+      "age": 58,
+      "thalach": 171,
+      "chol": 300,
+      "target": 1
+    },
+    {
+      "age": 60,
+      "thalach": 170,
+      "chol": 293,
+      "target": 1
+    },
+    {
+      "age": 68,
+      "thalach": 151,
+      "chol": 277,
+      "target": 0
+    },
+    {
+      "age": 46,
+      "thalach": 156,
+      "chol": 197,
+      "target": 0
+    },
+    {
+      "age": 77,
+      "thalach": 162,
+      "chol": 304,
+      "target": 1
+    },
+    {
+      "age": 54,
+      "thalach": 158,
+      "chol": 214,
+      "target": 0
+    },
+    {
+      "age": 58,
+      "thalach": 122,
+      "chol": 248,
+      "target": 0
+    },
+    {
+      "age": 48,
+      "thalach": 175,
+      "chol": 255,
+      "target": 0
+    },
+    {
+      "age": 57,
+      "thalach": 168,
+      "chol": 207,
+      "target": 0
+    },
+    {
+      "age": 52,
+      "thalach": 169,
+      "chol": 223,
+      "target": 0
+    },
+    {
+      "age": 54,
+      "thalach": 159,
+      "chol": 288,
+      "target": 0
+    },
+    {
+      "age": 35,
+      "thalach": 156,
+      "chol": 282,
+      "target": 1
+    },
+    {
+      "age": 45,
+      "thalach": 138,
+      "chol": 160,
+      "target": 0
+    },
+    {
+      "age": 70,
+      "thalach": 112,
+      "chol": 269,
+      "target": 1
+    },
+    {
+      "age": 53,
+      "thalach": 111,
+      "chol": 226,
+      "target": 0
+    },
+    {
+      "age": 59,
+      "thalach": 143,
+      "chol": 249,
+      "target": 1
+    },
+    {
+      "age": 62,
+      "thalach": 157,
+      "chol": 394,
+      "target": 0
+    },
+    {
+      "age": 64,
+      "thalach": 132,
+      "chol": 212,
+      "target": 1
+    },
+    {
+      "age": 57,
+      "thalach": 88,
+      "chol": 274,
+      "target": 1
+    },
+    {
+      "age": 52,
+      "thalach": 147,
+      "chol": 233,
+      "target": 0
+    },
+    {
+      "age": 56,
+      "thalach": 105,
+      "chol": 184,
+      "target": 1
+    },
+    {
+      "age": 43,
+      "thalach": 162,
+      "chol": 315,
+      "target": 0
+    },
+    {
+      "age": 53,
+      "thalach": 173,
+      "chol": 246,
+      "target": 0
+    },
+    {
+      "age": 48,
+      "thalach": 166,
+      "chol": 274,
+      "target": 1
+    },
+    {
+      "age": 56,
+      "thalach": 150,
+      "chol": 409,
+      "target": 1
+    },
+    {
+      "age": 42,
+      "thalach": 178,
+      "chol": 244,
+      "target": 0
+    },
+    {
+      "age": 59,
+      "thalach": 145,
+      "chol": 270,
+      "target": 0
+    },
+    {
+      "age": 60,
+      "thalach": 161,
+      "chol": 305,
+      "target": 1
+    },
+    {
+      "age": 63,
+      "thalach": 179,
+      "chol": 195,
+      "target": 0
+    },
+    {
+      "age": 42,
+      "thalach": 194,
+      "chol": 240,
+      "target": 0
+    },
+    {
+      "age": 66,
+      "thalach": 120,
+      "chol": 246,
+      "target": 1
+    },
+    {
+      "age": 54,
+      "thalach": 195,
+      "chol": 283,
+      "target": 1
+    },
+    {
+      "age": 69,
+      "thalach": 146,
+      "chol": 254,
+      "target": 1
+    },
+    {
+      "age": 50,
+      "thalach": 163,
+      "chol": 196,
+      "target": 0
+    },
+    {
+      "age": 51,
+      "thalach": 122,
+      "chol": 298,
+      "target": 1
+    },
+    {
+      "age": 43,
+      "thalach": 143,
+      "chol": 247,
+      "target": 1
+    },
+    {
+      "age": 62,
+      "thalach": 106,
+      "chol": 294,
+      "target": 1
+    },
+    {
+      "age": 68,
+      "thalach": 115,
+      "chol": 211,
+      "target": 0
+    },
+    {
+      "age": 67,
+      "thalach": 125,
+      "chol": 299,
+      "target": 1
+    },
+    {
+      "age": 69,
+      "thalach": 131,
+      "chol": 234,
+      "target": 0
+    },
+    {
+      "age": 45,
+      "thalach": 152,
+      "chol": 236,
+      "target": 0
+    },
+    {
+      "age": 50,
+      "thalach": 162,
+      "chol": 244,
+      "target": 0
+    },
+    {
+      "age": 59,
+      "thalach": 125,
+      "chol": 273,
+      "target": 1
+    },
+    {
+      "age": 50,
+      "thalach": 159,
+      "chol": 254,
+      "target": 0
+    },
+    {
+      "age": 64,
+      "thalach": 154,
+      "chol": 325,
+      "target": 0
+    },
+    {
+      "age": 57,
+      "thalach": 173,
+      "chol": 126,
+      "target": 0
+    },
+    {
+      "age": 64,
+      "thalach": 133,
+      "chol": 313,
+      "target": 0
+    },
+    {
+      "age": 43,
+      "thalach": 161,
+      "chol": 211,
+      "target": 0
+    },
+    {
+      "age": 45,
+      "thalach": 147,
+      "chol": 309,
+      "target": 1
+    },
+    {
+      "age": 58,
+      "thalach": 130,
+      "chol": 259,
+      "target": 1
+    },
+    {
+      "age": 50,
+      "thalach": 126,
+      "chol": 200,
+      "target": 1
+    },
+    {
+      "age": 55,
+      "thalach": 155,
+      "chol": 262,
+      "target": 0
+    },
+    {
+      "age": 62,
+      "thalach": 154,
+      "chol": 244,
+      "target": 1
+    },
+    {
+      "age": 37,
+      "thalach": 170,
+      "chol": 215,
+      "target": 0
+    },
+    {
+      "age": 38,
+      "thalach": 182,
+      "chol": 231,
+      "target": 1
+    },
+    {
+      "age": 41,
+      "thalach": 168,
+      "chol": 214,
+      "target": 0
+    },
+    {
+      "age": 66,
+      "thalach": 165,
+      "chol": 228,
+      "target": 1
+    },
+    {
+      "age": 52,
+      "thalach": 160,
+      "chol": 230,
+      "target": 1
+    },
+    {
+      "age": 56,
+      "thalach": 162,
+      "chol": 193,
+      "target": 0
+    },
+    {
+      "age": 46,
+      "thalach": 172,
+      "chol": 204,
+      "target": 0
+    },
+    {
+      "age": 46,
+      "thalach": 152,
+      "chol": 243,
+      "target": 0
+    },
+    {
+      "age": 64,
+      "thalach": 122,
+      "chol": 303,
+      "target": 0
+    },
+    {
+      "age": 59,
+      "thalach": 182,
+      "chol": 271,
+      "target": 0
+    },
+    {
+      "age": 41,
+      "thalach": 172,
+      "chol": 268,
+      "target": 0
+    },
+    {
+      "age": 54,
+      "thalach": 167,
+      "chol": 267,
+      "target": 0
+    },
+    {
+      "age": 39,
+      "thalach": 179,
+      "chol": 199,
+      "target": 0
+    },
+    {
+      "age": 53,
+      "thalach": 95,
+      "chol": 282,
+      "target": 1
+    },
+    {
+      "age": 63,
+      "thalach": 169,
+      "chol": 269,
+      "target": 1
+    },
+    {
+      "age": 34,
+      "thalach": 192,
+      "chol": 210,
+      "target": 0
+    },
+    {
+      "age": 47,
+      "thalach": 143,
+      "chol": 204,
+      "target": 0
+    },
+    {
+      "age": 67,
+      "thalach": 172,
+      "chol": 277,
+      "target": 0
+    },
+    {
+      "age": 54,
+      "thalach": 108,
+      "chol": 206,
+      "target": 1
+    },
+    {
+      "age": 66,
+      "thalach": 132,
+      "chol": 212,
+      "target": 1
+    },
+    {
+      "age": 52,
+      "thalach": 169,
+      "chol": 196,
+      "target": 0
+    },
+    {
+      "age": 55,
+      "thalach": 117,
+      "chol": 327,
+      "target": 1
+    },
+    {
+      "age": 49,
+      "thalach": 126,
+      "chol": 149,
+      "target": 1
+    },
+    {
+      "age": 74,
+      "thalach": 121,
+      "chol": 269,
+      "target": 0
+    },
+    {
+      "age": 54,
+      "thalach": 163,
+      "chol": 201,
+      "target": 0
+    },
+    {
+      "age": 54,
+      "thalach": 116,
+      "chol": 286,
+      "target": 1
+    },
+    {
+      "age": 56,
+      "thalach": 103,
+      "chol": 283,
+      "target": 1
+    },
+    {
+      "age": 46,
+      "thalach": 144,
+      "chol": 249,
+      "target": 1
+    },
+    {
+      "age": 49,
+      "thalach": 162,
+      "chol": 271,
+      "target": 0
+    },
+    {
+      "age": 42,
+      "thalach": 162,
+      "chol": 295,
+      "target": 0
+    },
+    {
+      "age": 41,
+      "thalach": 153,
+      "chol": 235,
+      "target": 0
+    },
+    {
+      "age": 41,
+      "thalach": 163,
+      "chol": 306,
+      "target": 0
+    },
+    {
+      "age": 49,
+      "thalach": 163,
+      "chol": 269,
+      "target": 0
+    },
+    {
+      "age": 61,
+      "thalach": 145,
+      "chol": 234,
+      "target": 1
+    },
+    {
+      "age": 60,
+      "thalach": 96,
+      "chol": 178,
+      "target": 0
+    },
+    {
+      "age": 67,
+      "thalach": 71,
+      "chol": 237,
+      "target": 1
+    },
+    {
+      "age": 58,
+      "thalach": 156,
+      "chol": 234,
+      "target": 1
+    },
+    {
+      "age": 47,
+      "thalach": 118,
+      "chol": 275,
+      "target": 1
+    },
+    {
+      "age": 52,
+      "thalach": 168,
+      "chol": 212,
+      "target": 1
+    },
+    {
+      "age": 62,
+      "thalach": 140,
+      "chol": 208,
+      "target": 0
+    },
+    {
+      "age": 57,
+      "thalach": 126,
+      "chol": 201,
+      "target": 0
+    },
+    {
+      "age": 58,
+      "thalach": 105,
+      "chol": 218,
+      "target": 1
+    },
+    {
+      "age": 64,
+      "thalach": 105,
+      "chol": 263,
+      "target": 0
+    },
+    {
+      "age": 51,
+      "thalach": 157,
+      "chol": 295,
+      "target": 0
+    },
+    {
+      "age": 43,
+      "thalach": 181,
+      "chol": 303,
+      "target": 0
+    },
+    {
+      "age": 42,
+      "thalach": 173,
+      "chol": 209,
+      "target": 0
+    },
+    {
+      "age": 67,
+      "thalach": 142,
+      "chol": 223,
+      "target": 0
+    },
+    {
+      "age": 76,
+      "thalach": 116,
+      "chol": 197,
+      "target": 0
+    },
+    {
+      "age": 70,
+      "thalach": 143,
+      "chol": 245,
+      "target": 0
+    },
+    {
+      "age": 57,
+      "thalach": 141,
+      "chol": 261,
+      "target": 1
+    },
+    {
+      "age": 44,
+      "thalach": 149,
+      "chol": 242,
+      "target": 0
+    },
+    {
+      "age": 58,
+      "thalach": 152,
+      "chol": 319,
+      "target": 1
+    },
+    {
+      "age": 60,
+      "thalach": 171,
+      "chol": 240,
+      "target": 0
+    },
+    {
+      "age": 44,
+      "thalach": 169,
+      "chol": 226,
+      "target": 0
+    },
+    {
+      "age": 61,
+      "thalach": 125,
+      "chol": 166,
+      "target": 1
+    },
+    {
+      "age": 42,
+      "thalach": 125,
+      "chol": 315,
+      "target": 1
+    },
+    {
+      "age": 52,
+      "thalach": 156,
+      "chol": 204,
+      "target": 1
+    },
+    {
+      "age": 59,
+      "thalach": 134,
+      "chol": 218,
+      "target": 1
+    },
+    {
+      "age": 40,
+      "thalach": 181,
+      "chol": 223,
+      "target": 1
+    },
+    {
+      "age": 42,
+      "thalach": 150,
+      "chol": 180,
+      "target": 0
+    },
+    {
+      "age": 61,
+      "thalach": 138,
+      "chol": 207,
+      "target": 1
+    },
+    {
+      "age": 66,
+      "thalach": 138,
+      "chol": 228,
+      "target": 0
+    },
+    {
+      "age": 46,
+      "thalach": 120,
+      "chol": 311,
+      "target": 1
+    },
+    {
+      "age": 71,
+      "thalach": 125,
+      "chol": 149,
+      "target": 0
+    },
+    {
+      "age": 59,
+      "thalach": 162,
+      "chol": 204,
+      "target": 1
+    },
+    {
+      "age": 64,
+      "thalach": 155,
+      "chol": 227,
+      "target": 0
+    },
+    {
+      "age": 66,
+      "thalach": 152,
+      "chol": 278,
+      "target": 0
+    },
+    {
+      "age": 39,
+      "thalach": 152,
+      "chol": 220,
+      "target": 0
+    },
+    {
+      "age": 57,
+      "thalach": 164,
+      "chol": 232,
+      "target": 1
+    },
+    {
+      "age": 58,
+      "thalach": 131,
+      "chol": 197,
+      "target": 0
+    },
+    {
+      "age": 57,
+      "thalach": 143,
+      "chol": 335,
+      "target": 1
+    },
+    {
+      "age": 47,
+      "thalach": 179,
+      "chol": 253,
+      "target": 0
+    },
+    {
+      "age": 55,
+      "thalach": 130,
+      "chol": 205,
+      "target": 1
+    },
+    {
+      "age": 35,
+      "thalach": 174,
+      "chol": 192,
+      "target": 0
+    },
+    {
+      "age": 61,
+      "thalach": 161,
+      "chol": 203,
+      "target": 1
+    },
+    {
+      "age": 58,
+      "thalach": 140,
+      "chol": 318,
+      "target": 1
+    },
+    {
+      "age": 58,
+      "thalach": 146,
+      "chol": 225,
+      "target": 1
+    },
+    {
+      "age": 58,
+      "thalach": 144,
+      "chol": 220,
+      "target": 0
+    },
+    {
+      "age": 56,
+      "thalach": 163,
+      "chol": 221,
+      "target": 0
+    },
+    {
+      "age": 56,
+      "thalach": 169,
+      "chol": 240,
+      "target": 0
+    },
+    {
+      "age": 67,
+      "thalach": 150,
+      "chol": 212,
+      "target": 1
+    },
+    {
+      "age": 55,
+      "thalach": 166,
+      "chol": 342,
+      "target": 0
+    },
+    {
+      "age": 44,
+      "thalach": 144,
+      "chol": 169,
+      "target": 1
+    },
+    {
+      "age": 63,
+      "thalach": 144,
+      "chol": 187,
+      "target": 1
+    },
+    {
+      "age": 63,
+      "thalach": 136,
+      "chol": 197,
+      "target": 1
+    },
+    {
+      "age": 41,
+      "thalach": 182,
+      "chol": 157,
+      "target": 0
+    },
+    {
+      "age": 59,
+      "thalach": 90,
+      "chol": 176,
+      "target": 1
+    },
+    {
+      "age": 57,
+      "thalach": 123,
+      "chol": 241,
+      "target": 1
+    },
+    {
+      "age": 45,
+      "thalach": 132,
+      "chol": 264,
+      "target": 1
+    },
+    {
+      "age": 68,
+      "thalach": 141,
+      "chol": 193,
+      "target": 1
+    },
+    {
+      "age": 57,
+      "thalach": 115,
+      "chol": 131,
+      "target": 1
+    },
+    {
+      "age": 57,
+      "thalach": 174,
+      "chol": 236,
+      "target": 1
+    },
+    {
+      "age": 38,
+      "thalach": 173,
+      "chol": 175,
+      "target": 0
+    }
+  ]
+}

@@ -1,0 +1,255 @@
+{
+  "deployedModel": "Logistic Regression",
+  "trainedAt": "2026-10-01",
+  "randomState": 42,
+  "trainRows": 242,
+  "testRows": 61,
+  "featureNames": [
+    "age",
+    "trestbps",
+    "chol",
+    "thalach",
+    "oldpeak",
+    "sex_1",
+    "cp_1",
+    "cp_2",
+    "cp_3",
+    "fbs_1",
+    "restecg_1",
+    "restecg_2",
+    "exang_1",
+    "slope_1",
+    "slope_2",
+    "ca_1",
+    "ca_2",
+    "ca_3",
+    "thal_2",
+    "thal_3"
+  ],
+  "numericFeatures": [
+    "age",
+    "trestbps",
+    "chol",
+    "thalach",
+    "oldpeak"
+  ],
+  "scaler": {
+    "mean": {
+      "age": 54.549586776859506,
+      "trestbps": 130.95867768595042,
+      "chol": 249.8388429752066,
+      "thalach": 149.96280991735537,
+      "oldpeak": 0.9991735537190083
+    },
+    "scale": {
+      "age": 8.978372765440131,
+      "trestbps": 17.58610302878636,
+      "chol": 52.737566192586975,
+      "thalach": 22.639527461380734,
+      "oldpeak": 1.1206178835595506
+    }
+  },
+  "coefficients": {
+    "age": 0.011453,
+    "trestbps": 0.280831,
+    "chol": 0.161662,
+    "thalach": -0.38991,
+    "oldpeak": 0.316072,
+    "sex_1": 1.221453,
+    "cp_1": 0.355494,
+    "cp_2": -0.2733,
+    "cp_3": 1.345419,
+    "fbs_1": -0.034007,
+    "restecg_1": -0.093618,
+    "restecg_2": 0.377178,
+    "exang_1": 0.461791,
+    "slope_1": 0.801673,
+    "slope_2": -0.08049,
+    "ca_1": 1.467563,
+    "ca_2": 1.452622,
+    "ca_3": 1.113827,
+    "thal_2": 0.061488,
+    "thal_3": 1.261638
+  },
+  "intercept": -3.388936,
+  "metrics": {
+    "name": "Logistic Regression",
+    "accuracy": 0.8689,
+    "precision": 0.8333,
+    "recall": 0.8929,
+    "f1": 0.8621,
+    "rocAuc": 0.9621,
+    "cvRocAucMean": 0.894,
+    "cvRocAucStd": 0.051
+  },
+  "comparison": [
+    {
+      "name": "Logistic Regression",
+      "accuracy": 0.8689,
+      "precision": 0.8333,
+      "recall": 0.8929,
+      "f1": 0.8621,
+      "rocAuc": 0.9621,
+      "cvRocAucMean": 0.894,
+      "cvRocAucStd": 0.051
+    },
+    {
+      "name": "Random Forest",
+      "accuracy": 0.9016,
+      "precision": 0.8438,
+      "recall": 0.9643,
+      "f1": 0.9,
+      "rocAuc": 0.9448,
+      "cvRocAucMean": 0.8838,
+      "cvRocAucStd": 0.0424
+    },
+    {
+      "name": "Gradient Boosting",
+      "accuracy": 0.8689,
+      "precision": 0.8125,
+      "recall": 0.9286,
+      "f1": 0.8667,
+      "rocAuc": 0.9318,
+      "cvRocAucMean": 0.856,
+      "cvRocAucStd": 0.0597
+    }
+  ],
+  "confusionMatrix": {
+    "trueNegative": 28,
+    "falsePositive": 5,
+    "falseNegative": 3,
+    "truePositive": 25
+  },
+  "rocCurve": [
+    {
+      "fpr": 0.0,
+      "tpr": 0.0
+    },
+    {
+      "fpr": 0.0,
+      "tpr": 0.0357
+    },
+    {
+      "fpr": 0.0,
+      "tpr": 0.7143
+    },
+    {
+      "fpr": 0.0909,
+      "tpr": 0.7143
+    },
+    {
+      "fpr": 0.0909,
+      "tpr": 0.8571
+    },
+    {
+      "fpr": 0.1212,
+      "tpr": 0.8571
+    },
+    {
+      "fpr": 0.1212,
+      "tpr": 0.8929
+    },
+    {
+      "fpr": 0.1515,
+      "tpr": 0.8929
+    },
+    {
+      "fpr": 0.1515,
+      "tpr": 0.9643
+    },
+    {
+      "fpr": 0.2727,
+      "tpr": 0.9643
+    },
+    {
+      "fpr": 0.2727,
+      "tpr": 1.0
+    },
+    {
+      "fpr": 1.0,
+      "tpr": 1.0
+    }
+  ],
+  "featureImportance": [
+    {
+      "feature": "thal_3",
+      "importance": 0.1416
+    },
+    {
+      "feature": "cp_3",
+      "importance": 0.12137
+    },
+    {
+      "feature": "thalach",
+      "importance": 0.12024
+    },
+    {
+      "feature": "oldpeak",
+      "importance": 0.10182
+    },
+    {
+      "feature": "age",
+      "importance": 0.08307
+    },
+    {
+      "feature": "chol",
+      "importance": 0.07296
+    },
+    {
+      "feature": "trestbps",
+      "importance": 0.06935
+    },
+    {
+      "feature": "exang_1",
+      "importance": 0.05681
+    },
+    {
+      "feature": "sex_1",
+      "importance": 0.0449
+    },
+    {
+      "feature": "slope_1",
+      "importance": 0.04088
+    },
+    {
+      "feature": "ca_1",
+      "importance": 0.03754
+    },
+    {
+      "feature": "cp_2",
+      "importance": 0.02225
+    },
+    {
+      "feature": "ca_2",
+      "importance": 0.01775
+    },
+    {
+      "feature": "restecg_2",
+      "importance": 0.01756
+    },
+    {
+      "feature": "ca_3",
+      "importance": 0.01509
+    },
+    {
+      "feature": "cp_1",
+      "importance": 0.01508
+    },
+    {
+      "feature": "fbs_1",
+      "importance": 0.01002
+    },
+    {
+      "feature": "thal_2",
+      "importance": 0.00695
+    },
+    {
+      "feature": "slope_2",
+      "importance": 0.00423
+    },
+    {
+      "feature": "restecg_1",
+      "importance": 0.00054
+    }
+  ]
+}
